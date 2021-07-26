@@ -92,28 +92,28 @@ def test_lucas_seven():
 def test_sum_series_zero():
     actual = 0
     expected = sum_series(0)
-    actual == expected
+    assert actual == expected
 
 
 def test_sum_series_one():
     actual = 1
     expected = sum_series(1)
-    actual == expected
+    assert actual == expected
 
 
 def test_sum_series_zero_locus(x=2, y=1):
     actual = 2
     expected = sum_series(0, x, y)
-    actual == expected
+    assert actual == expected
 
 
 def test_sum_series_one_locus(x=2, y=1):
     actual = 1
     expected = sum_series(1, x, y)
-    actual == expected
+    assert actual == expected
 
 
-def test_sum_series_seven_locus(x=2, y=1):
+def test_sum_series_four_locus(x=2, y=1):
     actual = 7
-    expected = sum_series(7, x, y)
-    actual == expected
+    expected = sum_series(4, x, y)
+    assert actual == expected
